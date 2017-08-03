@@ -50,7 +50,6 @@ textarea {  -webkit-appearance: none;}
 	margin-bottom: 66px;
 }
 #searchtxt{
-	display: inline-flex;
 	border: 0;
 	-moz-box-flex:5.0; /* Firefox */
 	-webkit-box-flex:5.0; /* Safari 和 Chrome */
@@ -66,7 +65,6 @@ textarea {  -webkit-appearance: none;}
 	outline: 0;
 }
 #searchbtn{
-	display: inline-flex;
 	border: 0;
 	-moz-box-flex:1.0; /* Firefox */
 	-webkit-box-flex:1.0; /* Safari 和 Chrome */
@@ -80,6 +78,8 @@ textarea {  -webkit-appearance: none;}
 	height: 28px;
 	outline: 0;
 	justify-content: center;
+	align-items:center;
+	text-align: center;
 	margin-right:4px ;
 	border-radius: 4px;
 }
