@@ -7,7 +7,7 @@ body{
 }
 html,body,article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ul , li , p, div, label, input,dl,dd,a,button,i{box-sizing: border-box;padding: 0;margin: 0; }
 
-a {text-decoration: none;}
+a {text-decoration: none;color:#666;}
 ul, li{list-style: none;}
 /* E 样式初始化 */
 
@@ -132,3 +132,72 @@ ul, li{list-style: none;}
 	display: inline-block;
 	text-align: center;
 }
+/* E 导航样式 */
+
+/* S 法律咨询样式 */
+.law_info{
+	width: 90%;
+	height:60px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap:nowrap;
+	flex-wrap:nowrap;
+	-webkit-box-pack:justify;
+  	-webkit-justify-content:space-between;
+  	-ms-flex-pack:justify;
+  	justify-content:space-between;
+}
+.law_info .law_info_logo{
+	width: 60px;
+	height: 60px;
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari 和 Chrome */
+	box-flex:1.0;
+	flex-grow: 1;
+	padding: 8px;
+	margin-right: 6px;
+
+}
+.law_info .law_info_logo img{
+	width: 100%;
+}
+
+.law_info .law_info_ul{
+	-moz-box-flex:4.0; /* Firefox */
+	-webkit-box-flex:4.0; /* Safari 和 Chrome */
+	box-flex:4.0;
+	flex-grow: 4;
+}
+.law_info .law_info_ul li{
+	height: 30px;
+	line-height: 30px;
+}
+.law_info .law_info_ul li a{
+	display: inline-block;
+	font-size: 13px;
+	color: #999999;
+	letter-spacing: 0;
+	line-height: 30px;
+}
+.law_info .law_info_ul li:before{
+	content: "·";
+	width: 12px;
+	display: inline-block;
+	font-size: 30px;
+	color: #999999;
+}
+/* E 法律咨询样式 */
+
+/* S 三云样式 */
+
+
+/* E 三云样式 */
+
+
+
+
+
+
