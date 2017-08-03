@@ -5,7 +5,7 @@ body{
 	-webkit-font-smoothing: antialiased;  /* 这个属性可以使页面上的字体抗锯齿 */
 	color:#727272;
 }
-html,body,article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ul , li , p, div, label, input,dl,dd,a,button,i{box-sizing: border-box;padding: 0;margin: 0; }
+html,body,article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ul , li , p, div, label, input,dl,dd,a,button,i , h1, h2, h3, h4{box-sizing: border-box;padding: 0;margin: 0; }
 
 a {text-decoration: none;color:#666;}
 ul, li{list-style: none;}
@@ -136,7 +136,7 @@ ul, li{list-style: none;}
 /* S 法律咨询样式 */
 .law_info{
 	width: 90%;
-	height:60px;
+	min-height:60px;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -152,7 +152,7 @@ ul, li{list-style: none;}
 }
 .law_info .law_info_logo{
 	width: 60px;
-	height: 60px;
+	min-height: 60px;
 	-moz-box-flex:1.0; /* Firefox */
 	-webkit-box-flex:1.0; /* Safari 和 Chrome */
 	box-flex:1.0;
@@ -163,6 +163,7 @@ ul, li{list-style: none;}
 }
 .law_info .law_info_logo img{
 	width: 100%;
+	min-width: 40px;
 }
 
 .law_info .law_info_ul{
@@ -172,16 +173,26 @@ ul, li{list-style: none;}
 	flex-grow: 4;
 	height: 60px;
 	padding: 5px 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .law_info .law_info_ul li{
 	height: 25px;
 	line-height: 25px;
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari 和 Chrome */
+	box-flex:1.0;
+	flex-grow: 1;
 }
 .law_info .law_info_ul li a{
 	font-size: 13px;
 	color: #999999;
 	letter-spacing: 0;
-	line-height: 30px;
+	display: inline-flex;
+	align-items: center;
 }
 /* E 法律咨询样式 */
 
@@ -199,6 +210,7 @@ ul, li{list-style: none;}
   	justify-content:space-between;
   	width: 100%;
   	border-top:1px solid #E8E8E8;
+  	background-color: #FFFFFF;
 }
 .cloudframe .QAbox{
 	-moz-box-flex:1.0; /* Firefox */
@@ -206,17 +218,89 @@ ul, li{list-style: none;}
 	box-flex:1.0;
 	flex-grow: 1;
 	border-right:1px solid #E8E8E8;
+	padding: 10px 8px 10px 16px;
 }
-
+.cloudframe .QAbox .QAimg_box{
+	width: 100%;
+	text-align: right;
+	margin-top: -10px;
+}
+.cloudframe .QAbox .QAimg_box img{
+	width: 50%;
+	padding: 4px;
+}
 .cloudframe .cloudbox{
 	-moz-box-flex:1.0; /* Firefox */
 	-webkit-box-flex:1.0; /* Safari 和 Chrome */
 	box-flex:1.0;
 	flex-grow: 1;
+	
+}
+.cloudframe .cloudbox .law_lib ,.cloudframe .cloudbox .law_legis{
+	padding: 10px 0px 0px 10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	
+}
+.cloudframe .cloudbox .law_lib {
+	border-bottom: 1px solid #E8E8E8;
+}
+.cloudbox .law_lib .law_textbox,.cloudframe .cloudbox .law_legis .law_textbox{
+	width: 60%;
+}
+.cloudbox .law_lib .cloudbox_img,.cloudframe .cloudbox .law_legis .cloudbox_img{
+	width: 40%;
+}
+.cloudbox_img img{
+	width: 98%;
+}
+.cloudframe .QAbox h2 ,.cloudframe .cloudbox h2 {
+	margin-bottom: 6px;
+}
+.cloudframe .QAbox h2 a, .cloudframe .cloudbox h2 a{
+	font-size: 20px;
+	color: #333333;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+.cloudframe .QAbox .law_describe, .cloudframe .cloudbox .law_describe{
+	font-size: 15px;
+	color: #999;
+}
+
+/* E 三云样式 */
+/* S 首页新闻样式 */
+.news_class{
+	border-top:14px solid #f5f5f5 ;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:space-around;
+	padding-top: 16px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.news_class li{
+	flex-grow: 1;
+	text-align: center;
+	font-size: 15px;
+	color: #2C6EDC;
+	letter-spacing: 0;
+	height: 30px;
 }
 
 
-/* E 三云样式 */
+
+/* E 首页新闻样式 */
+
+
+
+
+
 
 
 
