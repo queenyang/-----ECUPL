@@ -10,6 +10,12 @@ html,body,article, aside, details, figcaption, figure, footer, header, hgroup, m
 a {text-decoration: none;color:#666;}
 ul, li{list-style: none;}
 /* E 样式初始化 */
+/*去除苹果手机的默认样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+border-radius: 0;
+}
+textarea {  -webkit-appearance: none;}  
 
 /* S 头部样式 */
 .header{
