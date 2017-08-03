@@ -109,7 +109,7 @@ ul, li{list-style: none;}
 	box-flex:1.0;
 	flex-grow: 1;
 	width: 25%;
-	padding: 10px;
+	padding: 8px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -260,13 +260,13 @@ ul, li{list-style: none;}
 	margin-bottom: 6px;
 }
 .cloudframe .QAbox h2 a, .cloudframe .cloudbox h2 a{
-	font-size: 20px;
+	font-size: 18px;
 	color: #333333;
 	font-weight: 400;
 	margin-bottom: 6px;
 }
 .cloudframe .QAbox .law_describe, .cloudframe .cloudbox .law_describe{
-	font-size: 15px;
+	font-size: 13px;
 	color: #999;
 }
 
