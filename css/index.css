@@ -138,7 +138,13 @@ textarea {  -webkit-appearance: none;}
 	letter-spacing: 0;
 	display: inline-block;
 	text-align: center;
+	outline: none;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
 }
+.nav_ul li a.active {
+	color:#4194ea;
+}
+
 .nav_ul li a.hover{
 	color: #167fec;
 }
@@ -205,6 +211,11 @@ textarea {  -webkit-appearance: none;}
 	letter-spacing: 0;
 	display: inline-flex;
 	align-items: center;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+	
+.law_info .law_info_ul li a.active {
+	color:#4194ea;
 }
 /* E 法律咨询样式 */
 
@@ -276,6 +287,10 @@ textarea {  -webkit-appearance: none;}
 	color: #333333;
 	font-weight: 400;
 	margin-bottom: 6px;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.cloudframe .QAbox h2 a.active, .cloudframe .cloudbox h2 a.active {
+	color:#4194ea;
 }
 .cloudframe .QAbox .law_describe, .cloudframe .cloudbox .law_describe{
 	font-size: 13px;
@@ -307,6 +322,7 @@ textarea {  -webkit-appearance: none;}
 	height: 48px;
 	padding: 0 4px;
 	padding-top: 16px;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
 }
 .news_class li a.active{
 	color: #167fec;
