@@ -17,6 +17,10 @@ border-radius: 0;
 }
 textarea {  -webkit-appearance: none;}  
 
+#wrapper{
+	max-width: 900px;
+	margin: 0 auto;
+}
 /* S 头部样式 */
 .header{
 	width: 100%;
@@ -177,7 +181,7 @@ textarea {  -webkit-appearance: none;}
 	flex-grow: 1;
 	padding: 11px;
 	margin-right: 10px;
-
+	width: 20%;
 }
 .law_info .law_info_logo img{
 	width: 100%;
@@ -189,13 +193,14 @@ textarea {  -webkit-appearance: none;}
 	-webkit-box-flex:4.0; /* Safari 和 Chrome */
 	box-flex:4.0;
 	flex-grow: 4;
-	height: 60px;
-	padding: 5px 0;
+	padding: 11px 0;
+	width: 80%;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
+	-webkit-flex-direction:column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	justify-content:space-between;
 }
 .law_info .law_info_ul li{
 	height: 25px;
@@ -242,6 +247,7 @@ textarea {  -webkit-appearance: none;}
 	flex-grow: 1;
 	border-right:1px solid #E8E8E8;
 	padding: 10px 8px 10px 16px;
+	width: 50%;
 }
 .cloudframe .QAbox .QAimg_box{
 	width: 100%;
@@ -257,7 +263,7 @@ textarea {  -webkit-appearance: none;}
 	-webkit-box-flex:1.0; /* Safari 和 Chrome */
 	box-flex:1.0;
 	flex-grow: 1;
-	
+	width: 50%;
 }
 .cloudframe .cloudbox .law_lib ,.cloudframe .cloudbox .law_legis{
 	padding: 10px 0px 0px 10px;
