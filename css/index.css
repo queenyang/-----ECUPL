@@ -328,6 +328,9 @@ textarea {  -webkit-appearance: none;}
 	color: #167fec;
 	border-bottom: 1px solid #167FEC;
 }
+.news_list_ul{
+	display: none;
+}
 .news_list_ul li{
 	border-bottom: 1px solid #E8E8E8;
 	padding: 14px;
